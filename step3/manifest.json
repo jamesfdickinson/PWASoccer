@@ -1,0 +1,14 @@
+{
+  "short_name": "Soccer",
+  "name": "Soccer",
+  "display": "standalone",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "assets/Ball_football.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html"
+}

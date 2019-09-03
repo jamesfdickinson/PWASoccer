@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>Little Pim</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="assets/panda.png">
+    <link rel="manifest" href="manifest.json">
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/skeleton.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div style="text-align: center;margin: 20px auto; max-width:400px;">
+        <h1>Soccer</h1>
+        <img src="assets/Ball_football.png" style="width:100px;" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat dui, porttitor sed ipsum eget, consectetur finibus diam.  </p>
+        <p>
+            <a class="button" href="page2.html">page2</a>
+        </p>
+        <!--<div>
+            <a id="btnInstall" onclick="installApp()" style="display:none;">Install App</a>
+        </div>-->
+
+    </div>
+
+    <script>
+        //let deferredPrompt;
+
+        //window.addEventListener('beforeinstallprompt', (e) => {
+        //    // Stash the event so it can be triggered later.
+        //    deferredPrompt = e;
+        //    // Update UI notify the user they can add to home screen
+        //    let btnInstall = document.getElementById("btnInstall");
+        //    if (btnInstall) btnInstall.style.display = "block";
+        //    //prevent Chrome from showing the prompt
+        //    e.preventDefault();
+        //});
+
+        //function installApp() {
+        //    if (deferredPrompt) deferredPrompt.prompt();
+        //    let btnInstall = document.getElementById("btnInstall");
+        //    if (btnInstall) btnInstall.style.display = "none";
+        //}
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js');
+        }
+    </script>
+</body>
+
+</html>
